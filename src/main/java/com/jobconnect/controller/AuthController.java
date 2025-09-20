@@ -74,19 +74,7 @@ public class AuthController {
         return ResponseEntity.ok(savedR);
     }
 
-    // ----------------- Login -----------------
-//    @PostMapping("/login")
-//    public ResponseEntity<?> login(@RequestBody LoginRequest request) {
-//
-//        Authentication authentication = authenticationManager.authenticate(
-//                new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword())
-//        );
-//
-//        SecurityContextHolder.getContext().setAuthentication(authentication);
-//
-//        String jwt = jwtService.generateToken((UserDetails) authentication.getPrincipal());
-//        return ResponseEntity.ok(new JwtResponse(jwt));
-    //}
+
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request) {

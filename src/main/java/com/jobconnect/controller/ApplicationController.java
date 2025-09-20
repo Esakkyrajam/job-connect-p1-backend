@@ -1,42 +1,4 @@
-//package com.jobconnect.controller;
-//
-//import com.jobconnect.entity.Application;
-//import com.jobconnect.service.ApplicationService;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.security.core.Authentication;
-//import org.springframework.web.bind.annotation.*;
-//
-//import java.util.List;
-//
-//@RestController
-//@RequestMapping("/api/applications")
-//public class ApplicationController {
-//
-//    @Autowired
-//    private ApplicationService appService;
-//
-////    @PostMapping("/{jobId}/{jobseekerId}")
-////    public Application apply(@PathVariable Long jobId, @PathVariable Long jobseekerId) {
-////        return appService.applyToJob(jobId, jobseekerId);
-////    }
-//
-//    @PostMapping("/{jobId}/apply")
-//    public Application apply(@PathVariable Long jobId, Authentication authentication) {
-//        String email = authentication.getName(); // jobseeker email from token
-//        return appService.applyToJob(jobId, email);
-//    }
-//
-//
-//    @GetMapping("/jobseeker/{jobseekerId}")
-//    public List<Application> getJobseekerApps(@PathVariable Long jobseekerId) {
-//        return appService.getJobseekerApplications(jobseekerId);
-//    }
-//
-//    @GetMapping("/job/{jobId}")
-//    public List<Application> getJobApps(@PathVariable Long jobId) {
-//        return appService.getJobApplications(jobId);
-//    }
-//}
+
 
 
 

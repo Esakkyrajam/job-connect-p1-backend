@@ -59,27 +59,6 @@ public class JobService {
         System.out.println(jobseeker.getName() + " applied for " + job.getTitle());
     }
 
-//    public Job updateJob(Long jobId, Job updatedJob, String recruiterEmail) {
-//        // Fetch existing job
-//        Job existingJob = jobRepository.findById(jobId)
-//                .orElseThrow(() -> new RuntimeException("Job not found"));
-//
-//        // Check if the logged-in recruiter is the owner
-//        if (!existingJob.getRecruiter().getEmail().equals(recruiterEmail)) {
-//            throw new RuntimeException("You are not authorized to update this job");
-//        }
-//
-//        // Update fields
-//        existingJob.setTitle(updatedJob.getTitle());
-//        existingJob.setDescription(updatedJob.getDescription());
-//        existingJob.setLocation(updatedJob.getLocation());
-//        existingJob.setSkillsRequired(updatedJob.getSkillsRequired());
-//        existingJob.setSalary(updatedJob.getSalary());
-//
-//        return jobRepository.save(existingJob);
-//    }
-
-
     public Job updateJob(Long jobId, Job jobDetails, String recruiterEmail) {
         Job job = jobRepository.findById(jobId)
                 .orElseThrow(() -> new RuntimeException("Job not found"));

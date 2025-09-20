@@ -74,19 +74,6 @@ public class JobController {
     }
 
 
-//    @PutMapping("/{jobId}")
-//    public ResponseEntity<Job> updateJob(
-//            @PathVariable Long jobId,
-//            @RequestBody Job updatedJob,
-//            Authentication authentication) {
-//
-//        // Get recruiter email from JWT
-//        String recruiterEmail = authentication.getName();
-//
-//        Job job = jobService.updateJob(jobId, updatedJob, recruiterEmail);
-//
-//        return ResponseEntity.ok(job);
-//    }
 
 
 }

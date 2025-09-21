@@ -26,10 +26,10 @@ It powers the job portal by handling user management, job postings, applications
 ## 🛠 Tech Stack
 - **Backend Framework:** Spring Boot (Java)
 - **Security:** Spring Security + JWT
-- **Database:** MySQL / MongoDB
+- **Database:** MySQL / PostgreSQl
 - **Notification Service:** Twilio SMS API
-- **API Docs:** Swagger / OpenAPI
-- **Deployment:** Render / Railway / AWS EC2
+- **API Docs:** Swagger
+- **Deployment:** Render
 
 ---
 
